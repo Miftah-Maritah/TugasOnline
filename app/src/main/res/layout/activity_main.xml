@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#fffff9c4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffdcedc8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginBottom="15.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:textSize="14.0pt"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginBottom="25.0dip"
+                android:text="PENDAFTARAN" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@id/EdNamaDepan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Depan" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@id/EdNamaBelakang"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Belakang" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+
+                    <EditText
+                        android:id="@id/EdTempatLahir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tempat Lahir" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6">
+
+                    <EditText
+                        android:id="@id/EdTanggalLahir"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tanggal Lahir"
+                        android:editable="false"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_weight="0.5">
+
+                <EditText
+                    android:id="@id/EdAlamat"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="143.0dip"
+                    android:hint="Alamat"
+                    android:singleLine="false"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Jenis Kelamin" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/Rd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip">
+                <RadioButton
+                    android:id="@id/rbLaki"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/l"
+                    android:layout_weight="0.5"/>
+
+                <RadioButton android:id="@id/rbPerempuan"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    android:layout_weight="0.5" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="@string/agama" />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/rg1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip">
+                <RadioButton
+                    android:id="@id/rbIslam"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Islam"
+                    android:layout_weight="0.5"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@id/rbKristen"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Kristen"
+                    android:layout_weight="0.5"
+                    android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/rg2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@id/rbKatolik"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Katolik" android:layout_weight="0.5" android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@id/rbHindu"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content" android:text="Hindu" android:layout_weight="0.5" android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/rg3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@id/rbBuda"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Buddha"
+                    android:layout_weight="0.5"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton
+                    android:id="@id/rbKonghucu"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Konghucu"
+                    android:layout_weight="0.5"
+                    android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@id/rg4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@id/rbLain"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Aliran Kepercayaan"
+                    android:layout_weight="0.5"
+                    android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_weight="0.5">
+                <EditText
+                    android:id="@id/EdNotel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telepon"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_weight="0.5">
+                <EditText
+                    android:id="@id/EdEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_weight="0.5"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@id/EdPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_weight="0.5"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@id/EdPassword2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_password_kembali"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginBottom="30.0dip">
+                <Button android:textStyle="bold"
+                    android:id="@id/bKembali"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0pt"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:text="Kembali"
+                    android:layout_weight="0.5" />
+                <Button android:textStyle="bold"
+                    android:id="@id/bDaftar"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0pt"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:text="Daftar"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

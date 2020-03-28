@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="EdNamaDepan" type="id" />
+    <item name="EdNamaBelakang" type="id" />
+    <item name="EdTempatLahir" type="id" />
+    <item name="EdTanggalLahir" type="id" />
+    <item name="EdAlamat" type="id" />
+    <item name="bKembali" type="id" />
+    <item name="bDaftar" type="id" />
+    <item name="EdPassword" type="id" />
+    <item name="EdEmail" type="id" />
+    <item name="EdNotel" type="id" />
+    <item name="rg2" type="id" />
+    <item name="rbKatolik" type="id" />
+    <item name="rbHindu" type="id" />
+    <item name="rbKristen" type="id" />
+    <item name="rbIslam" type="id" />
+    <item name="rg1" type="id" />
+    <item name="rbPerempuan" type="id" />
+    <item name="rbLaki" type="id" />
+    <item name="Rd" type="id" />
+    <item name="rg3" type="id" />
+    <item name="rbBuda" type="id" />
+    <item name="rbKonghucu" type="id" />
+    <item name="rg4" type="id" />
+    <item name="rbLain" type="id" />
+    <item name="EdPassword2" type="id" />
+</resources>
